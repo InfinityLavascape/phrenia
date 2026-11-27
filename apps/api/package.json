@@ -1,0 +1,26 @@
+{
+  "name": "@phrenia/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.6.0",
+    "@hono/node-server": "^2.1.11",
+    "@phrenia/ai-core": "workspace:*",
+    "@phrenia/planning-engine": "workspace:*",
+    "@phrenia/shared": "workspace:*",
+    "better-auth": "^1.7.28",
+    "drizzle-orm": "^0.45.4",
+    "hono": "^4.13.22"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.11",
+    "tsx": "^4.23.15"
+  }
+}
